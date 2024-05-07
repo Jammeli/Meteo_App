@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+.meteo {
+  display: flex;
+  justify-content: center;
+
+}
+
+.container {
+
+  width: 311px;
+  height: 450px;
+
+
+  font-family: 'Lato' !important;
+  border: solid 2px rgb(5, 103, 249) !important;
+  border-radius: 20px;
+
+}
+
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #0871f2;
+  padding-right: 40px;
+  color: #fff;
+}
+
+.input-search::placeholder {
+  color: rgba(255, 255, 255, .5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.btn-search:focus~.input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}
+.weather {
+  width: 170px;
+  height: 180px;
+  padding: 10px;
+  margin: -4px 77px;
+  
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 282px;
+  height: 70px;
+  margin:  14px 16px;
+  
+
+}
+.text {
+  margin-top: 10px;
+  font-family: 'Calibri' !important;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  
+}
+.text2{
+  font-size: 13px;
+  margin-top: -17px;
+  font-family: 'Calibri' !important;
+
+}
+.temperature {
+  padding: 10px;
+  margin: -22px 96px;
+  font-family: 'Poppins' !important;
+}
+.pays {
+  padding: 10px;
+  margin: -20px 96px;
+  font-family: 'Poppins' !important;
+  width: 300px;
+}
+.message{
+  font-family: 'Poppins' !important;
+  color: red;
+  font-size: 13px;
+  margin:64px;
+}
